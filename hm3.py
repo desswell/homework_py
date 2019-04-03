@@ -1,8 +1,13 @@
 #1
 """
 a = [i for i in range(2, 100)]
-a = [1 for j in range(2, 10) for i in range(len(a)) if a[i] % j == 0]
-print(sum(a))
+b = 0
+for i in range(2, 10):
+    for j in range(len(a)):
+        if a[j] % i == 0:
+            b += 1
+    print(f'{i} - {b}')
+    b = 0
 """
 #2
 """
